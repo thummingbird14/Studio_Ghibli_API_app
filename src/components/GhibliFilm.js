@@ -2,14 +2,19 @@ import React from "react";
 
 const GhibliFilm = ({film}) => {
 
-    return <div className="film-item">
+
+
+    
+
+    return <>
                 <tr>
                     <td>{film.title}</td>
                     <td>{film.director}</td>
                     <td>{film.release_date}</td>
                     <td> {film.running_time}</td>
+                    <td><button> More Info</button></td>
                 </tr>
-           </div>
+           </>
 }
 
 

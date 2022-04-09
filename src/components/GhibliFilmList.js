@@ -1,7 +1,7 @@
 import React from "react";
 import GhibliFilm from "./GhibliFilm.js"
 
-const GhibliFilmList = ({films}) => {
+const GhibliFilmList = ({films, onMoreInfoRequest}) => {
 
 const filmList = films.map((film, index) => {
     return <GhibliFilm film={film} key={index}/>
@@ -9,13 +9,13 @@ const filmList = films.map((film, index) => {
     return(
         <div className="film-list">
             <table>
-            <tr>
-                <th>Title</th>
-                <th>Director</th>
-                <th>Release Date</th>
-                <th>Running Time</th>
-            </tr>
-             {filmList}
+                    <tr>
+                        <th>Title</th>
+                        <th>Director</th>
+                        <th>Release Date</th>
+                        <th>Running Time</th>
+                    </tr>
+                    {filmList}
             </table>
         </div>
     );
