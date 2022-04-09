@@ -1,13 +1,16 @@
 .film-container {
   display: grid;
-  grid-template-areas: 
-    'list detail';
+  grid-template-areas: 'list detail';
+  grid-template-columns: 58fr 42fr;
+
 }
 
 .film-list {
   grid-area: list;
+  margin:16px;
 }
 
 .film-detail {
-  grid-area: detail
+  grid-area: detail;
+  padding: 16px
 }
