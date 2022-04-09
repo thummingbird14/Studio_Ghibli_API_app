@@ -18,9 +18,16 @@ const GhibliFilmContainer = () => {
         // .then(films => console.log(films))
     }
 
+    const onGhibliFilmClick = function(film){
+        setRequestedFilm(film);
+        console.log`Requested film is: ${film}`
+    }
+
+
     return (
         <div className="film-container">
-            <GhibliFilmList films={films}/>
+            <GhibliFilmList films={films} onGhibliFilmClick={onGhibliFilmClick}/>
+            {requestedFilm ? <GhibliFilmDetail film={requestedFilm}/> :null}
         </div>
     )
 }

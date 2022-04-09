@@ -1,10 +1,10 @@
 import React from "react";
 import GhibliFilm from "./GhibliFilm.js"
 
-const GhibliFilmList = ({films, onMoreInfoRequest}) => {
+const GhibliFilmList = ({films, onGhibliFilmClick}) => {
 
 const filmList = films.map((film, index) => {
-    return <GhibliFilm film={film} key={index}/>
+    return <GhibliFilm film={film} key={index} onGhibliFilmClick={onGhibliFilmClick}/>
 });
     return(
         <div className="film-list">

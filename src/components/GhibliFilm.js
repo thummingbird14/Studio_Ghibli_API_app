@@ -1,8 +1,11 @@
 import React from "react";
 
-const GhibliFilm = ({film}) => {
+const GhibliFilm = ({film, onGhibliFilmClick}) => {
 
-
+    const handleClick = function() {
+        onGhibliFilmClick(film)
+        console.log(`Clicked on ${film.title}`)
+    }
 
     
 
@@ -12,7 +15,7 @@ const GhibliFilm = ({film}) => {
                     <td>{film.director}</td>
                     <td>{film.release_date}</td>
                     <td> {film.running_time}</td>
-                    <td><button> More Info</button></td>
+                    <td><button onClick={handleClick}> More Info</button></td>
                 </tr>
            </>
 }
