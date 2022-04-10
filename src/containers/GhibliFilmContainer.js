@@ -15,7 +15,6 @@ const GhibliFilmContainer = () => {
         fetch('https://ghibliapi.herokuapp.com/films')
         .then(res => res.json())
         .then(films => setFilms(films))
-        // .then(films => console.log(films))
     }
 
     const onGhibliFilmClick = function(film){

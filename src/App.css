@@ -1,3 +1,7 @@
+h1 {
+  margin: 16px;
+}
+
 .film-container {
   display: grid;
   grid-template-areas: 'list detail';
@@ -12,5 +16,5 @@
 
 .film-detail {
   grid-area: detail;
-  padding: 16px
+  padding: 16px;
 }

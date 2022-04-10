@@ -7,8 +7,6 @@ const GhibliFilm = ({film, onGhibliFilmClick}) => {
         console.log(`Clicked on ${film.title}`)
     }
 
-    
-
     return <>
                 <tr>
                     <td>{film.title}</td>
