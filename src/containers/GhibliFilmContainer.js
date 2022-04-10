@@ -19,7 +19,6 @@ const GhibliFilmContainer = () => {
 
     const onGhibliFilmClick = function(film){
         setRequestedFilm(film);
-        console.log`Requested film is: ${film}`
     }
 
 

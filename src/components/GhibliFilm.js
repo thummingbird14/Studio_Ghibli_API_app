@@ -4,7 +4,6 @@ const GhibliFilm = ({film, onGhibliFilmClick}) => {
 
     const handleClick = function() {
         onGhibliFilmClick(film)
-        console.log(`Clicked on ${film.title}`)
     }
 
     return <>
